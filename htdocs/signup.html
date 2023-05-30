@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href ="style.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div>
+        <form method="POST" action="/signup">
+            <fieldset>
+                <legend>Please  <span class="emphasis">sign up</span></legend>
+                Name: <input name="name" type="text" id="name" placeholder="Name">
+                Email: <input name="email" type="email" id="email" placeholder="Email" required>
+                Password: <input name="password" type="password" id="password" placeholder="Password" required>                
+                <input class="button" type="submit" value="Sign up">
+            </fieldset>
+        </form>
+    </div>
+    <br>
+    <h3>Press to log out</h3>
+    <form method="GET" action="/logout">
+            <input class="button" type="submit" value="Log out" >
+    </form>
+    <br>
+    <a href="http://localhost:8000/index.html">Home</a>
+    <br>
+    <a href="http://localhost:8000/displayposts.html">View posts</a>
+    <br>
+    <a href="http://localhost:8000/enterpost.html">Create a new post</a>
+    <br>
+    <a href="http://localhost:8000/deletepost.html">Delete a post</a>
+    <br>
+    <a href="http://localhost:8000/updatepost.html">Update a post</a>
+</body>
+</html>
